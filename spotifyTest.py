@@ -64,6 +64,8 @@ cards = {
     852680056815: 'spotify:track:2aQxJc9qixdnYwPpWuyF8Y',
     314188694641: 'spotify:track:1B75hgRqe7A4fwee3g3Wmu',
     717732387213: 'spotify:track:65jrjEhWfAvysKfnojk1i0',
+    912893616116: 'spotify:track:648TTtYB0bH0P8Hfy0FmkL',
+    69108504878: 'spotify:track:0Hw6SCrtU9pFCjgAONpnGZ',
     
 
 
