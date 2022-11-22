@@ -15,7 +15,21 @@ GPIO.setmode(GPIO.BOARD)
 LED_PIN = 11
 GPIO.setup(11, GPIO.OUT)
 
+def flash(PIN):
+    GPIO.output(LED_PIN, GPIO.HIGH)
+    sleep(0.2)
+    GPIO.output(LED_PIN, GPIO.LOW)
+    sleep(0.2)
+    GPIO.output(LED_PIN, GPIO.HIGH)
+    sleep(0.2)
+    GPIO.output(LED_PIN, GPIO.LOW)
+    sleep(0.2)
+    GPIO.output(LED_PIN, GPIO.HIGH)
+    sleep(0.2)
+    GPIO.output(LED_PIN, GPIO.LOW)
+    sleep(0.2)
 
+   
 scope = 'user-read-private user-read-playback-state user-modify-playback-state playlist-read-private user-read-currently-playing playlist-modify-private playlist-modify-public'
 
 cards = {
@@ -66,8 +80,33 @@ cards = {
     717732387213: 'spotify:track:65jrjEhWfAvysKfnojk1i0',
     912893616116: 'spotify:track:648TTtYB0bH0P8Hfy0FmkL',
     69108504878: 'spotify:track:0Hw6SCrtU9pFCjgAONpnGZ',
-    
-
+    143916729532: 'spotify:track:3CSpzkoL1XgDBZ1q9aDCUV',
+    18424469880: 'spotify:track:6CQaVuICm1WVXyy3SZ5jEI',
+    17132493258: 'spotify:track:4U45aEWtQhrm8A5mxPaFZ7',
+    675386694123: 'spotify:track:5OkKOkdVTKFrYi6GWXkMzR',
+    178226136137: 'spotify:track:0y60itmpH0aPKsFiGxmtnh',
+    308836697265: 'spotify:track:4h8VwCb1MTGoLKueQ1WgbD',
+    313181996221: 'spotify:track:0ikz6tENMONtK6qGkOrU3c',
+    883036980299: 'spotify:track:05wIrZSwuaVWhcv5FfqeH0',
+    629667398679: 'spotify:track:1Je1IMUlBXcx1Fz0WE7oPT',
+    839902757970: 'spotify:track:3Dy4REq8O09IlgiwuHQ3sk',
+    574387853583: 'spotify:track:3496rr5XSGD6n1Z1OKXovb',
+    496858956994: 'spotify:track:2DYtBXueUkZyUZAHKJAAIs',
+    943134284154: 'spotify:track:3Dnv944x31XU4FFMlkfnWN',
+    358413435967: 'spotify:track:70jtZsS59vhmyZSsln0std',
+    847177195351: 'spotify:track:2kNYcE79Yu778nqdOgBHEb',
+    769522336903: 'spotify:track:7rGMKCgeYXpBecQ1FPb3oc',
+    5354952969: 'spotify:track:2g2GkH3vZHk4lWzBjgQ6nY',
+    240100443342: 'spotify:track:5rb9QrpfcKFHM1EUbSIurX',
+    492548594154: 'spotify:track:1jyddn36UN4tVsJGtaJfem',
+    148563952811: 'spotify:track:13mXFvyRyjfIjnag95Rnug',
+    911559498206: 'spotify:track:3as6Wz3mwbTnusWhZjTUNr',
+    159889955113: 'spotify:track:0qxYx4F3vm1AOnfux6dDxP',
+    749474814233: 'spotify:track:6FT83pFXKhDlXDsNJFAHWz',
+    743720294834: 'spotify:track:69Qa7czzqraPWZgxpQN405',
+    53958613418: 'spotify:track:0293bTPojlkLvyr8ojc74y',
+    1082678976325: 'spotify:track:3e09orWFdPkTN7JAxCVc7g',
+    993095517377: 'spotify:track:714hERk9U1W8FMYkoC83CO',
 
     419251758720: 'exit'
 }
@@ -95,18 +134,7 @@ while True:
     print("Card Value is")
     songURI = cards.get(id)
     if songURI in tracks:
-        GPIO.output(LED_PIN, GPIO.HIGH)
-        sleep(0.2)
-        GPIO.output(LED_PIN, GPIO.LOW)
-        sleep(0.2)
-        GPIO.output(LED_PIN, GPIO.HIGH)
-        sleep(0.2)
-        GPIO.output(LED_PIN, GPIO.LOW)
-        sleep(0.2)
-        GPIO.output(LED_PIN, GPIO.HIGH)
-        sleep(0.2)
-        GPIO.output(LED_PIN, GPIO.LOW)
-        sleep(0.2)        
+        flash(LED_PIN)      
     elif songURI == 'exit':
         sp.pause_playback(device_id = DEVICE_ID)
         break
