@@ -6,8 +6,7 @@ import RPi.GPIO as GPIO
 
 from time import sleep
 
-
-DEVICE_ID = "e2a25c343e92c413d53a049b0424db513b1e8376"
+DEVICE_ID = 'e2a25c343e92c413d53a049b0424db513b1e8376'
 CLIENT_ID = '0de7a5b2dd2c42379211c6d1dceb25ec'
 CLIENT_SECRET = 'e43cbf9c244f428187b85069a82f9554'
 GPIO.setmode(GPIO.BOARD)
@@ -178,7 +177,87 @@ cards = {
     1080346943455: 'spotify:track:6gcd9amHfYlZrEpxrLYoU9',
     78988903529: 'spotify:track:5uuJruktM9fMdN9Va0DUMl',
     747862951057: 'spotify:track:5lA3pwMkBdd24StM90QrNR',
+    537595418976: 'spotify:track:2374M0fQpWi3dLnB54qaLX',
+    386902530406: 'spotify:track:4ccM2xBxicGigjLqt6A0YY',
+    416816306500: 'spotify:track:0edWHlI2pjWLaetkzojpC3',
+    533854099718: 'spotify:track:1V7mHn6zEEUpgysBYxiW9r',
+    1031012025570: 'spotify:track:27mhCGdAA8gM7b33KIiB3k',
+    83887850628: 'spotify:track:6WCeFNVAXUtNczb7lqLiZU',
+    553968600165: 'spotify:track:5IVuqXILoxVWvWEPm82Jxr',
+    918805939238: 'spotify:track:66TRwr5uJwPt15mfFkzhbi',
+    514996443560: 'spotify:track:5pkd9ib1RgbkAd1R9bIOCa',
+    370929239060: 'spotify:track:2ToW7zhGCrVrLU4fiKj9U1',
+    402537448698: 'spotify:track:5FMXrphygZ4z3gVDHGWxgl',
+    535934343552: 'spotify:track:0EMmVUYs9ZZRHtlADB88uz',
+    79676769408: 'spotify:track:7tawDKBYV9059X92D6dr7R',
+    788967064603: 'spotify:track:6VeZ970uI0Yi6sjBgyFBrp',
+    458372023501: 'spotify:track:7vFoFDWqTX0mHzLfrF1Cfy',
+    315648312360: 'spotify:track:3K7Q9PHUWPTaknlbFPThn2',
+    392900517772: 'spotify:track:7rix9h010ISulNPU1dmA7o',
+    889814975741: 'spotify:track:44AyOl4qVkzS48vBsbNXaC',
+    634247578657: 'spotify:track:4r8lRYnoOGdEi6YyI5OC1o',
+    49913922698: 'spotify:track:3XcuLPQb1LG13ZJEEa6wUI',
+    355646380456: 'spotify:track:4myBMnNWZlgvVelYeTu55w',
+    713150891186: 'spotify:track:6ztstiyZL6FXzh4aG46ZPD',
+    903598972701: 'spotify:track:3KzgdYUlqV6TOG7JCmx2Wg',
+    86706422843: 'spotify:track:78JAqmzSWW9SKUM6MchOrs',
+    764589835432: 'spotify:track:2goLsvvODILDzeeiT4dAoR',
+    318819206254: 'spotify:track:3MjUtNVVq3C8Fn0MP3zhXa',
+    31477143909: 'spotify:track:1nd9moIZkGvWoHtReFqkRY',
+    660302595130: 'spotify:track:5X0M16GjlZYN1WjPNzerb5',
+    16191718616: 'spotify:track:6o5sSlAsvLcPdrK7HFxXp3',
+    624476364634: 'spotify:track:6L2woktiAuW35BrcROmhW5',
+    28204205193: 'spotify:track:6vyFAHVKIsp3pdyhlOKMAz',
+    830592719252: 'spotify:track:3OeX4IyrnpwkElW5iS8leo',
+    513653015792: 'spotify:track:22x73BTJpIkciL7605zZ66',
+    727530281467: 'spotify:track:1LeWIs2hP2r5yOQnVuYoI5',
+    992592200931: 'spotify:track:4y1LsJpmMti1PfRQV9AWWe',
+    661679708579: 'spotify:track:0Qi29hMhf8tIzDpa2BH9MV',
+    141787404555: 'spotify:track:3F6czr26ZwGU5O5CHY04Ma',
+    705634698480: 'spotify:track:5YJtMNWKe55yr49cyJgxva',
+    885923977661: 'spotify:track:39lnzOIUCSNaQmgBHoz7rt',
+    485970609224: 'spotify:track:78VG6M1i7JQXBdygmWFwye',
+    776921023566: 'spotify:track:5WTxbyWTpoqhdxEN2szOnl',
+    599502029825: 'spotify:track:1JyaAeaXVFnVv5ikwWQVQ4',
+    1041917150331: 'spotify:track:3N2nIBN3a9J40PIij4gW5F',
+    635287766119: 'spotify:track:2hKdd3qO7cWr2Jo0Bcs0MA',
+    976898629437: 'spotify:track:78MI7mu1LV1k4IA2HzKmHe',
+    452820146481: 'spotify:track:0y03oYS73uWt3OIFGAGyDD',
+    342592455829: 'spotify:track:4Z2PtqWOBXJOgQ7UCLO3py',
+    535178183928: 'spotify:track:7HW5WIw7ZgZORCzUxv5gW5',
+    4063173060: 'spotify:track:1udKn1oNKYQSQ9OmiIWCMu',
+    559119271091: 'spotify:track:4356Typ82hUiFAynbLYbPn',
+    945868970448: 'spotify:track:3H8Sn0mYsZMPPlMCbebOJ5',
+    1084247513511: 'spotify:track:2ATDkfqprlNNe9mYWodgdc',
+    640589431980: 'spotify:track:7AqISujIaWcY3h5zrOqt5v',
+    247869675961: 'spotify:track:4kP69y3GKHi9tXckfgp4bK',
+    1090873066526: 'spotify:track:3FQ26GroLnhQEja48FKYqT',
+    343659323389: 'spotify:track:5P11rW6aJErF37MTfRZS31',
+    30386559267: 'spotify:track:5kXDF4OmM5COyeo6z97nEk',
+    335478981709: 'spotify:track:4fIWvT19w9PR0VVBuPYpWA',
+    177219503221: 'spotify:track:5k3U0OGYBccHdKJJu3HrUN',
+    4397401112: 'spotify:track:3sl4dcqSwxHVnLfqwF2jly',
+    903347380013: 'spotify:track:7v8YDCoM60xCPuSbXerImD',
+    643374384199: 'spotify:track:7zw0jBh5Khn08DkDP93yyh',
+    628191069390: 'spotify:track:3ZFTkvIE7kyPt6Nu3PEa7V',
+    298669769936: 'spotify:track:5iDfnRTdV2mrvMK886TLRg',
+    76539364573: 'spotify:track:6Ac4NVYYl2U73QiTt11ZKd',
+    86640695569: 'spotify:track:6EuudaFtwibd4tzcWjonb2',
+    127459531143: 'spotify:track:7KEajVD9AUG68onXRSFZTv',
+    1039987836105: 'spotify:track:6XcoXHCbeyhybWrqHLYWo0',
+    458539795639: 'spotify:track:1H5tvpoApNDxvxDexoaAUo',
+    609853506669: 'spotify:track:4ZtFanR9U6ndgddUvNcjcG',
+    606447797409: 'spotify:track:4cnqxdE2opmhp7MwkvhkAJ',
+    844818416745: 'spotify:track:49FYlytm3dAAraYgpoJZux',
+    786601542797: 'spotify:track:5oO3drDxtziYU2H1X23ZIp',
+    725599519815: 'spotify:track:3e9HZxeyfWwjeyPAMmWSSQ',
+    918151627789: 'spotify:track:53KFMdxzi8IJDewiql1Qo3',
+    475568669898: 'spotify:track:6UelLqGlWMcVH1E5c4H7lY',
     
+
+
+
+
     419251758720: 'exit'
 }
 
